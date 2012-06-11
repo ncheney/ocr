@@ -11,3 +11,4 @@
 *.la
 *.a
 .DS_Store
+tmp

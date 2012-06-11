@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		424419CB15859767009863BE /* ocr-all */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 424419CC15859767009863BE /* Build configuration list for PBXAggregateTarget "ocr-all" */;
+			buildPhases = (
+			);
+			dependencies = (
+				424419D015859770009863BE /* PBXTargetDependency */,
+				424419D215859770009863BE /* PBXTargetDependency */,
+				424419D415859770009863BE /* PBXTargetDependency */,
+			);
+			name = "ocr-all";
+			productName = all;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		4244199C1585961A009863BE /* libboost_iostreams.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 424419951585961A009863BE /* libboost_iostreams.dylib */; };
+		4244199D1585961A009863BE /* libboost_program_options.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 424419961585961A009863BE /* libboost_program_options.dylib */; };
+		4244199E1585961A009863BE /* libboost_regex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 424419971585961A009863BE /* libboost_regex.dylib */; };
+		4244199F1585961A009863BE /* libboost_serialization.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 424419981585961A009863BE /* libboost_serialization.dylib */; };
+		424419A01585961A009863BE /* libboost_signals.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 424419991585961A009863BE /* libboost_signals.dylib */; };
+		424419A11585961A009863BE /* libea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4244199A1585961A009863BE /* libea.a */; };
+		424419A21585961A009863BE /* libfn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4244199B1585961A009863BE /* libfn.a */; };
+		424419A315859639009863BE /* ocr_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4244197F1585954F009863BE /* ocr_game.cpp */; };
+		424419A415859639009863BE /* ocr_single.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 424419831585954F009863BE /* ocr_single.cpp */; };
+		424419A7158596AE009863BE /* ocr_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4244197F1585954F009863BE /* ocr_game.cpp */; };
+		424419AA158596AE009863BE /* libboost_iostreams.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 424419951585961A009863BE /* libboost_iostreams.dylib */; };
+		424419AB158596AE009863BE /* libboost_program_options.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 424419961585961A009863BE /* libboost_program_options.dylib */; };
+		424419AC158596AE009863BE /* libboost_regex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 424419971585961A009863BE /* libboost_regex.dylib */; };
+		424419AD158596AE009863BE /* libboost_serialization.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 424419981585961A009863BE /* libboost_serialization.dylib */; };
+		424419AE158596AE009863BE /* libboost_signals.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 424419991585961A009863BE /* libboost_signals.dylib */; };
+		424419AF158596AE009863BE /* libea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4244199A1585961A009863BE /* libea.a */; };
+		424419B0158596AE009863BE /* libfn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4244199B1585961A009863BE /* libfn.a */; };
+		424419B9158596B6009863BE /* ocr_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4244197F1585954F009863BE /* ocr_game.cpp */; };
+		424419BC158596B6009863BE /* libboost_iostreams.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 424419951585961A009863BE /* libboost_iostreams.dylib */; };
+		424419BD158596B6009863BE /* libboost_program_options.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 424419961585961A009863BE /* libboost_program_options.dylib */; };
+		424419BE158596B6009863BE /* libboost_regex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 424419971585961A009863BE /* libboost_regex.dylib */; };
+		424419BF158596B6009863BE /* libboost_serialization.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 424419981585961A009863BE /* libboost_serialization.dylib */; };
+		424419C0158596B6009863BE /* libboost_signals.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 424419991585961A009863BE /* libboost_signals.dylib */; };
+		424419C1158596B6009863BE /* libea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4244199A1585961A009863BE /* libea.a */; };
+		424419C2158596B6009863BE /* libfn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4244199B1585961A009863BE /* libfn.a */; };
+		424419C9158596D9009863BE /* ocr_multi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 424419811585954F009863BE /* ocr_multi.cpp */; };
+		424419CA15859737009863BE /* ocr_novelty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 424419821585954F009863BE /* ocr_novelty.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		424419CF15859770009863BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4244196715859482009863BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42441989158595BB009863BE;
+			remoteInfo = "ocr-single";
+		};
+		424419D115859770009863BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4244196715859482009863BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 424419A5158596AE009863BE;
+			remoteInfo = "ocr-multi";
+		};
+		424419D315859770009863BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4244196715859482009863BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 424419B7158596B6009863BE;
+			remoteInfo = "ocr-novelty";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42441988158595BB009863BE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		424419B1158596AE009863BE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		424419C3158596B6009863BE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4244197D1585954F009863BE /* Jamfile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.jam; path = Jamfile; sourceTree = "<group>"; };
+		4244197E1585954F009863BE /* libea_defaults.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = libea_defaults.cfg; sourceTree = "<group>"; };
+		4244197F1585954F009863BE /* ocr_game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ocr_game.cpp; sourceTree = "<group>"; };
+		424419801585954F009863BE /* ocr_game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ocr_game.h; sourceTree = "<group>"; };
+		424419811585954F009863BE /* ocr_multi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ocr_multi.cpp; sourceTree = "<group>"; };
+		424419821585954F009863BE /* ocr_novelty.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ocr_novelty.cpp; sourceTree = "<group>"; };
+		424419831585954F009863BE /* ocr_single.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ocr_single.cpp; sourceTree = "<group>"; };
+		424419841585954F009863BE /* ocr_statistics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ocr_statistics.h; sourceTree = "<group>"; };
+		424419851585954F009863BE /* ocr.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ocr.xcconfig; sourceTree = "<group>"; };
+		4244198A158595BB009863BE /* ocr-single */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ocr-single"; sourceTree = BUILT_PRODUCTS_DIR; };
+		424419951585961A009863BE /* libboost_iostreams.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_iostreams.dylib; path = /usr/local/lib/libboost_iostreams.dylib; sourceTree = "<absolute>"; };
+		424419961585961A009863BE /* libboost_program_options.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_program_options.dylib; path = /usr/local/lib/libboost_program_options.dylib; sourceTree = "<absolute>"; };
+		424419971585961A009863BE /* libboost_regex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_regex.dylib; path = /usr/local/lib/libboost_regex.dylib; sourceTree = "<absolute>"; };
+		424419981585961A009863BE /* libboost_serialization.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_serialization.dylib; path = /usr/local/lib/libboost_serialization.dylib; sourceTree = "<absolute>"; };
+		424419991585961A009863BE /* libboost_signals.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_signals.dylib; path = /usr/local/lib/libboost_signals.dylib; sourceTree = "<absolute>"; };
+		4244199A1585961A009863BE /* libea.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libea.a; path = ../DerivedData/research/Build/Products/Debug/libea.a; sourceTree = "<group>"; };
+		4244199B1585961A009863BE /* libfn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfn.a; path = ../ealib/build/Release/libfn.a; sourceTree = "<group>"; };
+		424419B5158596AE009863BE /* ocr-multi */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ocr-multi"; sourceTree = BUILT_PRODUCTS_DIR; };
+		424419C7158596B6009863BE /* ocr-novelty */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ocr-novelty"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42441987158595BB009863BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4244199C1585961A009863BE /* libboost_iostreams.dylib in Frameworks */,
+				4244199D1585961A009863BE /* libboost_program_options.dylib in Frameworks */,
+				4244199E1585961A009863BE /* libboost_regex.dylib in Frameworks */,
+				4244199F1585961A009863BE /* libboost_serialization.dylib in Frameworks */,
+				424419A01585961A009863BE /* libboost_signals.dylib in Frameworks */,
+				424419A11585961A009863BE /* libea.a in Frameworks */,
+				424419A21585961A009863BE /* libfn.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		424419A9158596AE009863BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424419AA158596AE009863BE /* libboost_iostreams.dylib in Frameworks */,
+				424419AB158596AE009863BE /* libboost_program_options.dylib in Frameworks */,
+				424419AC158596AE009863BE /* libboost_regex.dylib in Frameworks */,
+				424419AD158596AE009863BE /* libboost_serialization.dylib in Frameworks */,
+				424419AE158596AE009863BE /* libboost_signals.dylib in Frameworks */,
+				424419AF158596AE009863BE /* libea.a in Frameworks */,
+				424419B0158596AE009863BE /* libfn.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		424419BB158596B6009863BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424419BC158596B6009863BE /* libboost_iostreams.dylib in Frameworks */,
+				424419BD158596B6009863BE /* libboost_program_options.dylib in Frameworks */,
+				424419BE158596B6009863BE /* libboost_regex.dylib in Frameworks */,
+				424419BF158596B6009863BE /* libboost_serialization.dylib in Frameworks */,
+				424419C0158596B6009863BE /* libboost_signals.dylib in Frameworks */,
+				424419C1158596B6009863BE /* libea.a in Frameworks */,
+				424419C2158596B6009863BE /* libfn.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4244196515859482009863BE = {
+			isa = PBXGroup;
+			children = (
+				424419941585961A009863BE /* lib */,
+				4244197D1585954F009863BE /* Jamfile */,
+				4244197E1585954F009863BE /* libea_defaults.cfg */,
+				4244197F1585954F009863BE /* ocr_game.cpp */,
+				424419801585954F009863BE /* ocr_game.h */,
+				424419811585954F009863BE /* ocr_multi.cpp */,
+				424419821585954F009863BE /* ocr_novelty.cpp */,
+				424419831585954F009863BE /* ocr_single.cpp */,
+				424419841585954F009863BE /* ocr_statistics.h */,
+				424419851585954F009863BE /* ocr.xcconfig */,
+				4244197115859482009863BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4244197115859482009863BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4244198A158595BB009863BE /* ocr-single */,
+				424419B5158596AE009863BE /* ocr-multi */,
+				424419C7158596B6009863BE /* ocr-novelty */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		424419941585961A009863BE /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				424419951585961A009863BE /* libboost_iostreams.dylib */,
+				424419961585961A009863BE /* libboost_program_options.dylib */,
+				424419971585961A009863BE /* libboost_regex.dylib */,
+				424419981585961A009863BE /* libboost_serialization.dylib */,
+				424419991585961A009863BE /* libboost_signals.dylib */,
+				4244199A1585961A009863BE /* libea.a */,
+				4244199B1585961A009863BE /* libfn.a */,
+			);
+			name = lib;
+			path = ../apps;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42441989158595BB009863BE /* ocr-single */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42441991158595BB009863BE /* Build configuration list for PBXNativeTarget "ocr-single" */;
+			buildPhases = (
+				42441986158595BB009863BE /* Sources */,
+				42441987158595BB009863BE /* Frameworks */,
+				42441988158595BB009863BE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ocr-single";
+			productName = "ocr-single";
+			productReference = 4244198A158595BB009863BE /* ocr-single */;
+			productType = "com.apple.product-type.tool";
+		};
+		424419A5158596AE009863BE /* ocr-multi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 424419B2158596AE009863BE /* Build configuration list for PBXNativeTarget "ocr-multi" */;
+			buildPhases = (
+				424419A6158596AE009863BE /* Sources */,
+				424419A9158596AE009863BE /* Frameworks */,
+				424419B1158596AE009863BE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ocr-multi";
+			productName = "ocr-single";
+			productReference = 424419B5158596AE009863BE /* ocr-multi */;
+			productType = "com.apple.product-type.tool";
+		};
+		424419B7158596B6009863BE /* ocr-novelty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 424419C4158596B6009863BE /* Build configuration list for PBXNativeTarget "ocr-novelty" */;
+			buildPhases = (
+				424419B8158596B6009863BE /* Sources */,
+				424419BB158596B6009863BE /* Frameworks */,
+				424419C3158596B6009863BE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ocr-novelty";
+			productName = "ocr-single";
+			productReference = 424419C7158596B6009863BE /* ocr-novelty */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4244196715859482009863BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Michigan State University";
+			};
+			buildConfigurationList = 4244196A15859482009863BE /* Build configuration list for PBXProject "ocr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4244196515859482009863BE;
+			productRefGroup = 4244197115859482009863BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42441989158595BB009863BE /* ocr-single */,
+				424419A5158596AE009863BE /* ocr-multi */,
+				424419B7158596B6009863BE /* ocr-novelty */,
+				424419CB15859767009863BE /* ocr-all */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42441986158595BB009863BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424419A315859639009863BE /* ocr_game.cpp in Sources */,
+				424419A415859639009863BE /* ocr_single.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		424419A6158596AE009863BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424419C9158596D9009863BE /* ocr_multi.cpp in Sources */,
+				424419A7158596AE009863BE /* ocr_game.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		424419B8158596B6009863BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424419CA15859737009863BE /* ocr_novelty.cpp in Sources */,
+				424419B9158596B6009863BE /* ocr_game.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		424419D015859770009863BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42441989158595BB009863BE /* ocr-single */;
+			targetProxy = 424419CF15859770009863BE /* PBXContainerItemProxy */;
+		};
+		424419D215859770009863BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 424419A5158596AE009863BE /* ocr-multi */;
+			targetProxy = 424419D115859770009863BE /* PBXContainerItemProxy */;
+		};
+		424419D415859770009863BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 424419B7158596B6009863BE /* ocr-novelty */;
+			targetProxy = 424419D315859770009863BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4244197815859482009863BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 424419851585954F009863BE /* ocr.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4244197915859482009863BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 424419851585954F009863BE /* ocr.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		42441992158595BB009863BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../DerivedData/research/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../ealib/build/Release\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		42441993158595BB009863BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../DerivedData/research/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../ealib/build/Release\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		424419B3158596AE009863BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../DerivedData/research/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../ealib/build/Release\"",
+				);
+				PRODUCT_NAME = "ocr-multi";
+			};
+			name = Debug;
+		};
+		424419B4158596AE009863BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../DerivedData/research/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../ealib/build/Release\"",
+				);
+				PRODUCT_NAME = "ocr-multi";
+			};
+			name = Release;
+		};
+		424419C5158596B6009863BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../DerivedData/research/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../ealib/build/Release\"",
+				);
+				PRODUCT_NAME = "ocr-novelty";
+			};
+			name = Debug;
+		};
+		424419C6158596B6009863BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../DerivedData/research/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../ealib/build/Release\"",
+				);
+				PRODUCT_NAME = "ocr-novelty";
+			};
+			name = Release;
+		};
+		424419CD15859767009863BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		424419CE15859767009863BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4244196A15859482009863BE /* Build configuration list for PBXProject "ocr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4244197815859482009863BE /* Debug */,
+				4244197915859482009863BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42441991158595BB009863BE /* Build configuration list for PBXNativeTarget "ocr-single" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42441992158595BB009863BE /* Debug */,
+				42441993158595BB009863BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		424419B2158596AE009863BE /* Build configuration list for PBXNativeTarget "ocr-multi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				424419B3158596AE009863BE /* Debug */,
+				424419B4158596AE009863BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		424419C4158596B6009863BE /* Build configuration list for PBXNativeTarget "ocr-novelty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				424419C5158596B6009863BE /* Debug */,
+				424419C6158596B6009863BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		424419CC15859767009863BE /* Build configuration list for PBXAggregateTarget "ocr-all" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				424419CD15859767009863BE /* Debug */,
+				424419CE15859767009863BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4244196715859482009863BE /* Project object */;
+}

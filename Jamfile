@@ -1,0 +1,31 @@
+import os ;
+local HOME = [ os.environ HOME ] ;
+
+exe ocr-single :
+    ocr_single.cpp
+    ocr_game.cpp
+    /libea//libea
+    /libea//libea_runner
+    /libfn//libfn
+    : <include>./include <link>static
+    ;
+
+exe ocr-multi :
+    ocr_multi.cpp
+    ocr_game.cpp
+    /libea//libea
+    /libea//libea_runner
+    /libfn//libfn
+    : <include>./include <link>static
+    ;
+
+exe ocr-novelty :
+    ocr_novelty.cpp
+    ocr_game.cpp
+    /libea//libea
+    /libea//libea_runner
+    /libfn//libfn
+    : <include>./include <link>static
+    ;
+
+install dist : ocr-single ocr-multi ocr-novelty : <location>$(HOME)/bin ;

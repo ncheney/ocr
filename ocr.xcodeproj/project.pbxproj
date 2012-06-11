@@ -44,12 +44,12 @@
 		42441A0C158613F5009863BE /* ocr_multi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42441A04158613F5009863BE /* ocr_multi.cpp */; };
 		42441A10158613F5009863BE /* ocr_novelty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42441A05158613F5009863BE /* ocr_novelty.cpp */; };
 		42441A11158613F5009863BE /* ocr_single.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42441A06158613F5009863BE /* ocr_single.cpp */; };
-		42441A42158614E0009863BE /* libea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42441A3715861482009863BE /* libea.a */; };
-		42441A43158614E0009863BE /* libfn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42441A3915861482009863BE /* libfn.a */; };
-		42441A83158616DB009863BE /* libea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42441A3715861482009863BE /* libea.a */; };
-		42441A84158616DB009863BE /* libfn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42441A3915861482009863BE /* libfn.a */; };
-		42441A85158616E2009863BE /* libea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42441A3715861482009863BE /* libea.a */; };
-		42441A86158616E2009863BE /* libfn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42441A3915861482009863BE /* libfn.a */; };
+		42441B3815862C89009863BE /* libea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42441B3615862C89009863BE /* libea.a */; };
+		42441B3915862C89009863BE /* libfn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42441B3715862C89009863BE /* libfn.a */; };
+		42441B3A15862CEA009863BE /* libea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42441B3615862C89009863BE /* libea.a */; };
+		42441B3B15862CEA009863BE /* libfn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42441B3715862C89009863BE /* libfn.a */; };
+		42441B3C15862CEF009863BE /* libea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42441B3615862C89009863BE /* libea.a */; };
+		42441B3D15862CEF009863BE /* libfn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42441B3715862C89009863BE /* libfn.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,76 +73,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 424419B7158596B6009863BE;
 			remoteInfo = "ocr-novelty";
-		};
-		42441A3615861482009863BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42441A2A15861482009863BE /* ealib.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 423CBD9F157D0E0B0003A644;
-			remoteInfo = ea;
-		};
-		42441A3815861482009863BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42441A2A15861482009863BE /* ealib.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 423CBDA7157D0E2B0003A644;
-			remoteInfo = fn;
-		};
-		42441A3A15861482009863BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42441A2A15861482009863BE /* ealib.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 423CBE57157D0FCC0003A644;
-			remoteInfo = libea_test;
-		};
-		42441A3C15861482009863BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42441A2A15861482009863BE /* ealib.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 420EB2F1157D11540060CAB2;
-			remoteInfo = libfn_test;
-		};
-		42441AA315861904009863BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42441A2A15861482009863BE /* ealib.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 423CBD9E157D0E0B0003A644;
-			remoteInfo = ea;
-		};
-		42441AA515861904009863BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42441A2A15861482009863BE /* ealib.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 423CBDA6157D0E2B0003A644;
-			remoteInfo = fn;
-		};
-		42441AA71586190C009863BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42441A2A15861482009863BE /* ealib.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 423CBD9E157D0E0B0003A644;
-			remoteInfo = ea;
-		};
-		42441AA91586190C009863BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42441A2A15861482009863BE /* ealib.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 423CBDA6157D0E2B0003A644;
-			remoteInfo = fn;
-		};
-		42441AAB15861911009863BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42441A2A15861482009863BE /* ealib.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 423CBD9E157D0E0B0003A644;
-			remoteInfo = ea;
-		};
-		42441AAD15861911009863BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42441A2A15861482009863BE /* ealib.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 423CBDA6157D0E2B0003A644;
-			remoteInfo = fn;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -191,9 +121,11 @@
 		42441A05158613F5009863BE /* ocr_novelty.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ocr_novelty.cpp; sourceTree = "<group>"; };
 		42441A06158613F5009863BE /* ocr_single.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ocr_single.cpp; sourceTree = "<group>"; };
 		42441A07158613F5009863BE /* ocr_statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocr_statistics.h; sourceTree = "<group>"; };
-		42441A2A15861482009863BE /* ealib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ealib.xcodeproj; path = ealib/ealib.xcodeproj; sourceTree = "<group>"; };
 		42441A7B15861669009863BE /* libea_defaults.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = libea_defaults.cfg; sourceTree = "<group>"; };
 		42441A7C15861669009863BE /* ocr.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ocr.xcconfig; sourceTree = "<group>"; };
+		42441B3615862C89009863BE /* libea.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libea.a; path = ../DerivedData/research/Build/Products/Debug/libea.a; sourceTree = "<group>"; };
+		42441B3715862C89009863BE /* libfn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfn.a; path = ../DerivedData/research/Build/Products/Debug/libfn.a; sourceTree = "<group>"; };
+		42441B3E15862E1B009863BE /* Jamroot */ = {isa = PBXFileReference; lastKnownFileType = text; path = Jamroot; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,8 +133,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42441A85158616E2009863BE /* libea.a in Frameworks */,
-				42441A86158616E2009863BE /* libfn.a in Frameworks */,
+				42441B3815862C89009863BE /* libea.a in Frameworks */,
+				42441B3915862C89009863BE /* libfn.a in Frameworks */,
 				4244199C1585961A009863BE /* libboost_iostreams.dylib in Frameworks */,
 				4244199D1585961A009863BE /* libboost_program_options.dylib in Frameworks */,
 				4244199E1585961A009863BE /* libboost_regex.dylib in Frameworks */,
@@ -215,8 +147,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42441A83158616DB009863BE /* libea.a in Frameworks */,
-				42441A84158616DB009863BE /* libfn.a in Frameworks */,
+				42441B3A15862CEA009863BE /* libea.a in Frameworks */,
+				42441B3B15862CEA009863BE /* libfn.a in Frameworks */,
 				424419AA158596AE009863BE /* libboost_iostreams.dylib in Frameworks */,
 				424419AB158596AE009863BE /* libboost_program_options.dylib in Frameworks */,
 				424419AC158596AE009863BE /* libboost_regex.dylib in Frameworks */,
@@ -229,8 +161,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42441A42158614E0009863BE /* libea.a in Frameworks */,
-				42441A43158614E0009863BE /* libfn.a in Frameworks */,
+				42441B3C15862CEF009863BE /* libea.a in Frameworks */,
+				42441B3D15862CEF009863BE /* libfn.a in Frameworks */,
 				424419BC158596B6009863BE /* libboost_iostreams.dylib in Frameworks */,
 				424419BD158596B6009863BE /* libboost_program_options.dylib in Frameworks */,
 				424419BE158596B6009863BE /* libboost_regex.dylib in Frameworks */,
@@ -245,7 +177,7 @@
 		4244196515859482009863BE = {
 			isa = PBXGroup;
 			children = (
-				42441A2A15861482009863BE /* ealib.xcodeproj */,
+				42441B3E15862E1B009863BE /* Jamroot */,
 				42441A7A15861669009863BE /* etc */,
 				424419941585961A009863BE /* lib */,
 				42441A01158613F5009863BE /* src */,
@@ -266,6 +198,8 @@
 		424419941585961A009863BE /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				42441B3615862C89009863BE /* libea.a */,
+				42441B3715862C89009863BE /* libfn.a */,
 				424419951585961A009863BE /* libboost_iostreams.dylib */,
 				424419961585961A009863BE /* libboost_program_options.dylib */,
 				424419971585961A009863BE /* libboost_regex.dylib */,
@@ -287,17 +221,6 @@
 				42441A07158613F5009863BE /* ocr_statistics.h */,
 			);
 			path = src;
-			sourceTree = "<group>";
-		};
-		42441A2B15861482009863BE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				42441A3715861482009863BE /* libea.a */,
-				42441A3915861482009863BE /* libfn.a */,
-				42441A3B15861482009863BE /* libea_test */,
-				42441A3D15861482009863BE /* libfn_test */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		42441A7A15861669009863BE /* etc */ = {
@@ -323,8 +246,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				42441AA415861904009863BE /* PBXTargetDependency */,
-				42441AA615861904009863BE /* PBXTargetDependency */,
 			);
 			name = "ocr-single";
 			productName = "ocr-single";
@@ -342,8 +263,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				42441AA81586190C009863BE /* PBXTargetDependency */,
-				42441AAA1586190C009863BE /* PBXTargetDependency */,
 			);
 			name = "ocr-multi";
 			productName = "ocr-single";
@@ -361,8 +280,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				42441AAC15861911009863BE /* PBXTargetDependency */,
-				42441AAE15861911009863BE /* PBXTargetDependency */,
 			);
 			name = "ocr-novelty";
 			productName = "ocr-single";
@@ -387,12 +304,6 @@
 			mainGroup = 4244196515859482009863BE;
 			productRefGroup = 4244197115859482009863BE /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 42441A2B15861482009863BE /* Products */;
-					ProjectRef = 42441A2A15861482009863BE /* ealib.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				42441989158595BB009863BE /* ocr-single */,
@@ -402,37 +313,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		42441A3715861482009863BE /* libea.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libea.a;
-			remoteRef = 42441A3615861482009863BE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		42441A3915861482009863BE /* libfn.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libfn.a;
-			remoteRef = 42441A3815861482009863BE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		42441A3B15861482009863BE /* libea_test */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = libea_test;
-			remoteRef = 42441A3A15861482009863BE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		42441A3D15861482009863BE /* libfn_test */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = libfn_test;
-			remoteRef = 42441A3C15861482009863BE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		42441986158595BB009863BE /* Sources */ = {
@@ -479,36 +359,6 @@
 			isa = PBXTargetDependency;
 			target = 424419B7158596B6009863BE /* ocr-novelty */;
 			targetProxy = 424419D315859770009863BE /* PBXContainerItemProxy */;
-		};
-		42441AA415861904009863BE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ea;
-			targetProxy = 42441AA315861904009863BE /* PBXContainerItemProxy */;
-		};
-		42441AA615861904009863BE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = fn;
-			targetProxy = 42441AA515861904009863BE /* PBXContainerItemProxy */;
-		};
-		42441AA81586190C009863BE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ea;
-			targetProxy = 42441AA71586190C009863BE /* PBXContainerItemProxy */;
-		};
-		42441AAA1586190C009863BE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = fn;
-			targetProxy = 42441AA91586190C009863BE /* PBXContainerItemProxy */;
-		};
-		42441AAC15861911009863BE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ea;
-			targetProxy = 42441AAB15861911009863BE /* PBXContainerItemProxy */;
-		};
-		42441AAE15861911009863BE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = fn;
-			targetProxy = 42441AAD15861911009863BE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

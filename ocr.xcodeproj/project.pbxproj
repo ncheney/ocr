@@ -192,7 +192,6 @@
 		42441A06158613F5009863BE /* ocr_single.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ocr_single.cpp; sourceTree = "<group>"; };
 		42441A07158613F5009863BE /* ocr_statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocr_statistics.h; sourceTree = "<group>"; };
 		42441A2A15861482009863BE /* ealib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ealib.xcodeproj; path = ealib/ealib.xcodeproj; sourceTree = "<group>"; };
-		42441A791586165D009863BE /* Jamfile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.jam; path = Jamfile; sourceTree = "<group>"; };
 		42441A7B15861669009863BE /* libea_defaults.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = libea_defaults.cfg; sourceTree = "<group>"; };
 		42441A7C15861669009863BE /* ocr.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ocr.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -247,7 +246,6 @@
 			isa = PBXGroup;
 			children = (
 				42441A2A15861482009863BE /* ealib.xcodeproj */,
-				42441A791586165D009863BE /* Jamfile */,
 				42441A7A15861669009863BE /* etc */,
 				424419941585961A009863BE /* lib */,
 				42441A01158613F5009863BE /* src */,

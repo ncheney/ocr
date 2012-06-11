@@ -1,5 +1,0 @@
-use-project /libea : libea ;
-use-project /libfn : libfn ;
-
-build-project libea ;
-build-project libfn ;

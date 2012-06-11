@@ -1,4 +1,0 @@
-ealib
-=====
-
-Evolutionary Algorithms Library

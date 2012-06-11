@@ -1,0 +1,34 @@
+import os ;
+local HOME = [ os.environ HOME ] ;
+
+use-project /libea : ealib/libea ;
+use-project /libfn : ealib/libfn ;
+
+exe ocr-single :
+    src/ocr_single.cpp
+    src/ocr_game.cpp
+    /libea//libea
+    /libea//libea_runner
+    /libfn//libfn
+    : <include>./include <link>static
+    ;
+
+exe ocr-multi :
+    src/ocr_multi.cpp
+    src/ocr_game.cpp
+    /libea//libea
+    /libea//libea_runner
+    /libfn//libfn
+    : <include>./include <link>static
+    ;
+
+exe ocr-novelty :
+    src/ocr_novelty.cpp
+    src/ocr_game.cpp
+    /libea//libea
+    /libea//libea_runner
+    /libfn//libfn
+    : <include>./include <link>static
+    ;
+
+install dist : ocr-single ocr-multi ocr-novelty : <location>$(HOME)/bin ;

@@ -57,7 +57,9 @@ struct ocr_fitness : fitness_function<unary_fitness<double>, stochasticS, relati
         }
         
         // create location in phenotype space here, add to the attributes.
-        
+        ind.novelty_point().clear();
+        ind.novelty_point().push_back(r.mean_tpr());
+        ind.novelty_point().push_back(r.mean_tnr());
         
         return 1.0 + ea::algorithm::vmag(dv.begin(), dv.end());
     }

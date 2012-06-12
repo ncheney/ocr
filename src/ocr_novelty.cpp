@@ -33,7 +33,7 @@ using namespace ea;
 #include "ocr_statistics.h"
 
 //! Fitness function for the OCR problem.
-struct ocr_fitness : fitness_function<unary_fitness<double>, stochasticS, relativeS> {
+struct ocr_fitness : fitness_function<unary_fitness<double>, constantS, absoluteS, stochasticS> {
     games::ocr_game game;
     
     template <typename EA>
@@ -66,8 +66,8 @@ struct ocr_fitness : fitness_function<unary_fitness<double>, stochasticS, relati
         put<OCR_FNR>(r.mean_fnr(), ind);
         put<OCR_OUT>(r.unique_outputs(), ind);
         put<OCR_ACC>(r.mean_accuracy(), ind);
-        put<OCR_IMAGES>(algorithm::vcat(r.idx.begin(), r.idx.end()), ind);
-        
+        put<OCR_ORDER>((r.mean_tpr()+r.mean_tnr()-r.mean_fpr()-r.mean_fnr()) / (r.mean_tpr()+r.mean_tnr()+r.mean_fpr()+r.mean_fnr()), ind);
+        put<OCR_IMAGES>(algorithm::vcat(r.idx.begin(), r.idx.end()), ind);        
         
         typedef std::vector<double> distance_vector;
         distance_vector dv;

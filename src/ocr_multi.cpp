@@ -76,8 +76,9 @@ struct ocr_fitness : fitness_function<multivalued_fitness<double> > {
         put<OCR_FNR>(r.mean_fnr(), ind);
         put<OCR_OUT>(r.unique_outputs(), ind);
         put<OCR_ACC>(r.mean_accuracy(), ind);
-        put<OCR_IMAGES>(algorithm::vcat(r.idx.begin(), r.idx.end()), ind);
-          
+        put<OCR_ORDER>((r.mean_tpr()+r.mean_tnr()-r.mean_fpr()-r.mean_fnr()) / (r.mean_tpr()+r.mean_tnr()+r.mean_fpr()+r.mean_fnr()), ind);
+        put<OCR_IMAGES>(algorithm::vcat(r.idx.begin(), r.idx.end()), ind);        
+        
         value_type f;
         for(std::size_t i=0; i<10; ++i) {
             f.push_back(r.tpr(i));

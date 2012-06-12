@@ -50,9 +50,7 @@ struct mean_roc_trajectory : record_statistics_event<EA> {
             tpr(get<OCR_TPR>(ind(i,ea)));
             fpr(get<OCR_FPR>(ind(i,ea)));
             acc(get<OCR_ACC>(ind(i,ea)));
-            double o=(get<OCR_TPR>(ind(i,ea)) + get<OCR_TNR>(ind(i,ea)) - get<OCR_FPR>(ind(i,ea)) - get<OCR_FNR>(ind(i,ea))) 
-            / (get<OCR_TPR>(ind(i,ea)) + get<OCR_TNR>(ind(i,ea)) + get<OCR_FPR>(ind(i,ea)) + get<OCR_FNR>(ind(i,ea)));
-            order(o);
+            order(get<OCR_ORDER>(ind(i,ea)));
         }
         _df.write(ea.current_update())
         .write(mean(tpr))

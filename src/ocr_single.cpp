@@ -36,7 +36,7 @@ using namespace ea;
 
 /*! Fitness function for the OCR problem.
  */
-struct ocr_fitness : fitness_function<unary_fitness<double>, stochasticS> {
+struct ocr_fitness : fitness_function<unary_fitness<double>, constantS, absoluteS, stochasticS> {
     games::ocr_game game;
 
     template <typename EA>
@@ -62,18 +62,25 @@ struct ocr_fitness : fitness_function<unary_fitness<double>, stochasticS> {
         
         games::ocr_game::results r = game_results(network, get<GAME_SIZE>(ea), get<HMM_UPDATE_N>(ea), rng);
         
+        put<FF_RNG_SEED>(get<FF_RNG_SEED>(ea), ind);
         put<OCR_TPR>(r.mean_tpr(), ind);
+        put<OCR_TNR>(r.mean_tnr(), ind);
         put<OCR_FPR>(r.mean_fpr(), ind);
+        put<OCR_FNR>(r.mean_fnr(), ind);
         put<OCR_OUT>(r.unique_outputs(), ind);
         put<OCR_ACC>(r.mean_accuracy(), ind);
+        put<OCR_ORDER>((r.mean_tpr()+r.mean_tnr()-r.mean_fpr()-r.mean_fnr()) / (r.mean_tpr()+r.mean_tnr()+r.mean_fpr()+r.mean_fnr()), ind);
         put<OCR_IMAGES>(algorithm::vcat(r.idx.begin(), r.idx.end()), ind);
-          
-        typedef std::vector<double> distance_vector;
-        distance_vector dv;
-        for(std::size_t i=0; i<10; ++i) {
-            dv.push_back(r.tpr(i) * r.tnr(i) * (1.0-r.fpr(i)) * (1.0-r.fnr(i)));
-        }
-        return 1.0 + ea::algorithm::vmag(dv.begin(), dv.end());
+
+        return 1.0 + get<OCR_ORDER>(ind);
+        
+//        typedef std::vector<double> distance_vector;
+//        distance_vector dv;
+//        for(std::size_t i=0; i<10; ++i) {
+//            dv.push_back(r.tpr(i) * r.tnr(i) * (1.0-r.fpr(i)) * (1.0-r.fnr(i)));
+//        }
+//        
+//        return 1.0 + ea::algorithm::vmag(dv.begin(), dv.end());
     }
 };
 
@@ -85,7 +92,7 @@ circular_genome<unsigned int>,
 hmm_mutation,
 ocr_fitness,
 recombination::asexual,
-generational_models::death_birth_process< >,
+generational_models::death_birth_process,
 initialization::complete_population<hmm_random_individual>
 > ea_type;
 
@@ -144,7 +151,7 @@ public:
     
     virtual void gather_events(EA& ea) {
         add_event<datafiles::generation_fitness>(this, ea);
-        add_event<roc_trajectory>(this, ea);
+        add_event<mean_roc_trajectory>(this, ea);
     };
 };
 LIBEA_CMDLINE_INSTANCE(ea_type, ocr);

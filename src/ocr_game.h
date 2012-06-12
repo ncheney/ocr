@@ -43,6 +43,7 @@ LIBEA_MD_DECL(OCR_FPR, "individual.ocr.mean_fpr", double);
 LIBEA_MD_DECL(OCR_FNR, "individual.ocr.mean_fnr", double);
 LIBEA_MD_DECL(OCR_OUT, "individual.ocr.unique_outputs", double);
 LIBEA_MD_DECL(OCR_ACC, "individual.ocr.mean_accuracy", double);
+LIBEA_MD_DECL(OCR_ORDER, "individual.ocr.order", double);
 LIBEA_MD_DECL(OCR_IMAGES, "individual.ocr.images", std::string);
 
 LIBEA_MD_DECL(GAME_SIZE, "game.ocr.size", int);

@@ -142,7 +142,7 @@ public:
         // ea options
         add_option<NOVELTY_THRESHOLD>(this);
         add_option<NOVELTY_NEIGHBORHOOD_SIZE>(this);
-        add_option<NUM_FITTEST>(this);
+        add_option<NOVELTY_FITTEST_SIZE>(this);
         add_option<REPRESENTATION_SIZE>(this);
         add_option<POPULATION_SIZE>(this);
         add_option<REPLACEMENT_RATE_P>(this);

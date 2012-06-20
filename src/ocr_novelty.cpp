@@ -2,7 +2,7 @@
  * 
  * This file is part of OCR.
  * 
- * Copyright 2012 David B. Knoester, Randy Olson.
+ * Copyright 2012 David B. Knoester, Randal S. Olson.
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -75,7 +75,7 @@ struct ocr_fitness : fitness_function<unary_fitness<double>, constantS, absolute
             dv.push_back(r.tpr(i) * r.tnr(i) * (1.0-r.fpr(i)) * (1.0-r.fnr(i)));
         }
         
-        // create location in phenotype space here, add to the attributes.
+        // create location in phenotype space (i.e., the novelty point)
         ind.novelty_point().clear();
         ind.novelty_point().push_back(r.mean_tpr());
         ind.novelty_point().push_back(r.mean_tnr());
@@ -142,6 +142,7 @@ public:
         // ea options
         add_option<NOVELTY_THRESHOLD>(this);
         add_option<NOVELTY_NEIGHBORHOOD_SIZE>(this);
+        add_option<NOVELTY_FITTEST_SIZE>(this);
         add_option<REPRESENTATION_SIZE>(this);
         add_option<POPULATION_SIZE>(this);
         add_option<REPLACEMENT_RATE_P>(this);

@@ -76,7 +76,6 @@ struct ocr_fitness : fitness_function<unary_fitness<double>, constantS, absolute
         }
         
         // create location in phenotype space (i.e., the novelty point)
-        ind.novelty_point().clear();
         ind.novelty_point().push_back(r.mean_tpr());
         ind.novelty_point().push_back(r.mean_tnr());
         

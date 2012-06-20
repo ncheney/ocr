@@ -126,6 +126,7 @@
 		42441B3615862C89009863BE /* libea.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libea.a; path = ../DerivedData/research/Build/Products/Debug/libea.a; sourceTree = "<group>"; };
 		42441B3715862C89009863BE /* libfn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfn.a; path = ../DerivedData/research/Build/Products/Debug/libfn.a; sourceTree = "<group>"; };
 		42441B3E15862E1B009863BE /* Jamroot */ = {isa = PBXFileReference; lastKnownFileType = text; path = Jamroot; sourceTree = "<group>"; };
+		42D44D181588ABBF00D6242A /* ocr_single.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = ocr_single.cfg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				42441A7B15861669009863BE /* libea_defaults.cfg */,
+				42D44D181588ABBF00D6242A /* ocr_single.cfg */,
 				42441A7C15861669009863BE /* ocr.xcconfig */,
 			);
 			path = etc;
